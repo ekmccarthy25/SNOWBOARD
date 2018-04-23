@@ -171,3 +171,40 @@ body {
     background-image: url(../img//small2.jpg);
     background-size: cover;
     background-repeat: no-repeat; }
+
+.team {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 2;
+  border: 1px solid red;
+  margin: 0 auto;
+  max-width: 1000px;
+  grid-row-gap: 5rem; }
+
+.grid {
+  display: flex;
+  justify-content: space-around; }
+
+.teamImg {
+  width: 15rem; }
+
+.navigation {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 2;
+  border: 1px solid red;
+  margin: 0 auto;
+  max-width: 1500px;
+  grid-row-gap: 5rem;
+  height: 200px; }
+
+.nav {
+  display: flex;
+  justify-content: space-around; }
+
+.logo {
+  height: 20px;
+  align-items: flex-start; }
+
+.navLink {
+  align-items: flex-end; }
