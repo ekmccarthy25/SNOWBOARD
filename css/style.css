@@ -2,6 +2,24 @@
   padding: 0;
   margin: 0; }
 
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "nav"  "main"  "footer";
+  grid-template-rows: auto 1fr auto; }
+
+.nav {
+  grid-area: nav; }
+
+.main {
+  grid-area: main;
+  margin: 1rem auto; }
+
+.footer {
+  grid-area: footer; }
+
 body {
   background-image: url(../img/bg.png);
   background-size: cover;
@@ -12,7 +30,6 @@ body {
   background-color: #EBF2F1;
   display: flex;
   align-content: center;
-  width: 100%;
   justify-content: space-around;
   padding: 10px; }
   .nav-logo {
@@ -47,7 +64,6 @@ body {
           width: 100%; }
 
 .footer {
-  width: 100%;
   display: flex;
   flex-wrap: wrap; }
   .footer-top {
@@ -79,6 +95,9 @@ body {
     font-family: 'Montserrat';
     font-weight: 300; }
 
+html, body {
+  height: 100vh; }
+
 .banner {
   display: flex;
   justify-content: center;
@@ -100,11 +119,11 @@ body {
       letter-spacing: 7px; }
 
 .collage {
-  display: grid;
-  grid-template-columns: repeat(4, 200px);
+  display: inline-grid;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 200px);
   grid-gap: 10px;
-  margin: 10%;
+  margin: 3rem;
   justify-content: center; }
   .collage .tall {
     grid-area: 1/1/5/3;
@@ -172,21 +191,21 @@ body {
     background-size: cover;
     background-repeat: no-repeat; }
 
-.team {
-  display: grid;
-  grid-template-columns: 3;
-  grid-template-rows: 2;
-  border: 1px solid red;
-  margin: 0 auto;
-  max-width: 1000px;
-  grid-row-gap: 5rem; }
+.team-banner {
+  margin: 0 auto; }
+  .team-banner-img {
+    width: 50%; }
 
-.grid {
+.team-grid {
   display: flex;
-  justify-content: space-around; }
+  flex-flow: row wrap;
+  max-width: 1000px;
+  margin: 0 auto; }
 
 .teamImg {
-  width: 15rem; }
+  height: 15rem;
+  flex: 1 0 25%;
+  margin: 5px; }
 
 .navigation {
   display: grid;

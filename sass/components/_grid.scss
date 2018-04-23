@@ -2,3 +2,34 @@
     padding: 0;
     margin: 0;
 }
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    // grid-gap: .75rem;
+    grid-template-areas:
+        "nav" 
+        "main" 
+        "footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+.nav {
+    grid-area: nav;
+}
+.main {
+   grid-area: main;
+margin: 1rem auto;
+// max-width: 1300px;
+   
+}
+
+
+.footer {
+    grid-area: footer;
+    // -webkit-width: 100vw;
+    // width: 100vw;
+    // display: flex;
+}

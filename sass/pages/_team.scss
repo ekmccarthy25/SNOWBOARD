@@ -1,24 +1,42 @@
 .team {
-    display: grid;
-    grid-template-columns: 3;
-    grid-template-rows: 2;
-    border: 1px solid red;
-    margin: 0 auto;
-    max-width: 1000px;
-    grid-row-gap: 5rem;
+    // display: grid;
+    // grid-template-columns: 3;
+    // grid-template-rows: 2;
+    // border: 1px solid red;
+    // margin: 0 auto;
+    // max-width: 1000px;
+    // grid-row-gap: 5rem;
+
+    &-banner{
+        margin: 0 auto;
+        // width
+        &-img {
+            width: 50%;
+    }
+}
+    &-grid {
+        display:flex;
+        // justify-content: space-around;
+        flex-flow: row wrap;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 }
 
-.grid {
-    display:flex;
-    justify-content: space-around;
+// .grid {
+//     display:flex;
+//     justify-content: space-around;
    
-}
+// }
 
 .teamImg {
-    width: 15rem;
+   
+    height: 15rem;
+    flex: 1 0 25%;
+    margin: 5px;
     
 }
-
+ 
 .navigation {
     display: grid;
     grid-template-columns: 3;

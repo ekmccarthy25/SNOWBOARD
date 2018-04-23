@@ -1,3 +1,5 @@
+html, body {height: 100vh;}
+
 .banner{
     display: flex;
     justify-content: center;
@@ -24,11 +26,11 @@
 }
 
 .collage{
-    display: grid;
-    grid-template-columns: repeat(4, 200px);
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 200px);
     grid-gap: 10px;
-    margin: 10%;
+    margin: 3rem;
     justify-content: center;
     .tall{
         grid-area: 1/1/5/3;
