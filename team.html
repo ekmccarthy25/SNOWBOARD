@@ -4,48 +4,62 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
     <title>Home Page</title>
 </head>
-<div class="wrapper">
+
 <body>
     <section class="nav">
         <div class="nav-logo">
             <img class="nav-logo" src="img/logo.png">
         </div>
         <ul class="nav-links">
-            <li class="active"><a href="index.html">HOME</a></li>
-            <li><a href="products.html">PRODUCTS</a></li>
-            <li><a href="team.html">SPONSOR</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li class="active"><a href="products.html">PRODUCTS</a></li>
+            <li><a href="team.html">TEAM</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="blog.html">BLOG</a></li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
+        <div class="nav-hamburger">
+            <img src="img/hamburger.png">
+        </div>
     </section>
     <section class="main">
-   
-        <div class="team-banner">
-                <img class="team-banner-img" src="img/teamBanner.jpg"> 
-        </div>
-     
-    <!-- </section> -->
-   <div class="team">
-    <div class="team-grid">
-        <img class="teamImg" src="img/proTeam1.jpg">
-        <img class="teamImg" src="img/proTeam2.jpg">
-        <img class="teamImg" src="img/proTeam3.jpg">
-        <!-- </div>
-        <div class="grid"> -->
-        <img class="teamImg" src="img/proTeam4.jpg">
-        <img class="teamImg" src="img/proTeam5.jpg">
-        <img class="teamImg" src="img/proTeam6.jpg">
-    </div>
-</div>
-</section>
-        
-   
+            <div class="team">
+                <div class="team-banner">
+                <img src="img/teamBanner.jpg">
+                <h1 class="team-banner-caption">Team</h1>
+                </div>
 
+                <h2 class="team-type">Pro Team</h2>
+                
+             <div class="team-grid">
+                    <div class="team-rider"><img class="teamImg" src="img/team/proTeam1.jpg">
+                        <h4 class="team-rider-name">Bryan Iguchi</h4></div>
+                         <div class="team-rider"><img class="teamImg" src="img/team/proTeam2.jpg"><h4 class="team-rider-name">Mark Carter</h4></div>
+                         <div class="team-rider"><img class="teamImg" src="img/team/proTeam3.jpg"><h4 class="team-rider-name">Marie-France Roy</h4></div>
+                         <div class="team-rider"><img class="teamImg" src="img/team/proTeam4.jpg"><h4 class="team-rider-name">Frank April</h4></div>
+                         <div class="team-rider"><img class="teamImg" src="img/team/proTeam5.jpg"><h4 class="team-rider-name">Erik Leon</h4></div>
+                         <div class="team-rider"><img class="teamImg" src="img/team/proTeam6.jpg"><h4 class="team-rider-name">Charles Reid</h4></div>
 
-    
+             </div>
+             <hr>
+
+             <h2 class="team-type">Am Team</h2>
+                
+             <div class="team-grid">
+                    <div class="team-rider"><img class="teamImg" src="img/team/proTeam1.jpg">
+                        <h4 class="team-rider-name">Bryan Iguchi</h4></div>
+                         <div class="team-rider"><img class="teamImg" src="img/team/proTeam2.jpg"><h4 class="team-rider-name">Mark Carter</h4></div>
+                         <div class="team-rider"><img class="teamImg" src="img/team/proTeam3.jpg"><h4 class="team-rider-name">Marie-France Roy</h4></div>
+                         <div class="team-rider"><img class="teamImg" src="img/team/proTeam4.jpg"><h4 class="team-rider-name">Frank April</h4></div>
+                         <div class="team-rider"><img class="teamImg" src="img/team/proTeam5.jpg"><h4 class="team-rider-name">Erik Leon</h4></div>
+                         <div class="team-rider"><img class="teamImg" src="img/team/proTeam6.jpg"><h4 class="team-rider-name">Charles Reid</h4></div>
+
+             </div>
+         </div>
+         </section>
     <section class="footer">
         <div class="footer-top">
             <div class="footer-top-third">
@@ -68,7 +82,12 @@
             <p>Copyright &copy; 2018</p>
         </div>
     </section>
-</div>
+    <script>
+        $(".nav-hamburger").click(function() {
+            $(".nav-links").slideToggle();
+        });
+
+    </script>
 </body>
 
 </html>

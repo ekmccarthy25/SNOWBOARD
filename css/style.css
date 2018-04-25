@@ -429,39 +429,61 @@ html, body {
       .bindings-products-4 {
         grid-area: 3/1/4/2; } }
 
-.team-banner {
-  margin: 0 auto; }
-  .team-banner-img {
-    width: 50%; }
+.team {
+  margin: 1rem auto;
+  max-width: 1000px; }
+  .team-banner {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 2rem 0 5rem 0; }
+    .team-banner img {
+      width: 100%;
+      height: 100%; }
+    .team-banner-caption {
+      text-transform: uppercase;
+      font-size: 130px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-shadow: .5px .5px #000; }
+  .team-rider {
+    margin: .5rem;
+    position: relative; }
+    .team-rider img {
+      display: block; }
+    .team-rider-name {
+      position: absolute;
+      bottom: 8px;
+      text-transform: uppercase;
+      color: white;
+      background-color: black;
+      padding: 3px 15px;
+      font-weight: 100; }
+  .team-type {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 35px; }
 
-.team-grid {
-  display: flex;
-  flex-flow: row wrap;
-  max-width: 1000px;
-  margin: 0 auto; }
+hr {
+  margin: 3rem; }
 
 .teamImg {
-  height: 15rem;
-  flex: 1 0 25%;
-  margin: 5px; }
+  max-width: 100%; }
 
-.navigation {
-  display: grid;
-  grid-template-columns: 3;
-  grid-template-rows: 2;
-  border: 1px solid red;
-  margin: 0 auto;
-  max-width: 1500px;
-  grid-row-gap: 5rem;
-  height: 200px; }
+@media screen and (min-width: 600px) {
+  .team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; }
+  .team-rider {
+    width: calc(50% - 1rem); }
+    .team-rider-name {
+      bottom: 15px; } }
 
-.nav {
-  display: flex;
-  justify-content: space-around; }
-
-.logo {
-  height: 20px;
-  align-items: flex-start; }
-
-.navLink {
-  align-items: flex-end; }
+@media screen and (min-width: 1000px) {
+  .team-rider {
+    width: calc((100% / 3 ) - 1.5rem); } }
