@@ -36,3 +36,17 @@
         font-weight: 300;
     }
 }
+@media only screen and (max-width: 520px){
+    .footer-top-third{
+        width: 100px;
+        margin: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        p{
+            font-size: 10px;
+        }
+        h3{
+            font-size: 12px;
+        }
+    }
+}

@@ -47,4 +47,49 @@ body{
             }
         }
     }
+
+&-hamburger{
+    display:none;
+}
+}
+@media only screen and (max-width: 920px){
+.nav{
+    &-links{
+        li{
+            font-size: 2vw;
+        }
+    }
+}   
+}
+@media only screen and (max-width: 520px){
+.nav{
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+.nav-links{
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    width: 100%;
+    li{
+        font-size: 20px;
+        margin: 10px;
+        &:first-child{
+            margin-top: 25px;
+        }
+    }
+}
+.nav-logo{
+    display:none;
+}
+.nav-hamburger{
+    display: block;
+    margin:0;
+    padding: 0;
+    margin-top: 15px;
+    cursor: pointer;
+}
 }

@@ -1,0 +1,192 @@
+.boards{
+    background-image: url(../img/bg_full.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 75%;
+    max-width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: 100px;
+    &-products{
+        float: right;
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(2, 250px);
+        font-family: 'Montserrat';
+        &-1{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: lightgray;
+            text-align: center;
+            padding: 10px;
+            img{
+                width: 80%;
+                height: 30%;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        &-2{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+            img{
+                width: 80%;
+                height: 30%;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        &-3{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+            img{
+                width: 80%;
+                height: 30%;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        &-4{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: lightgray;
+            text-align: center;
+            padding: 10px;
+            img{
+                width: 80%;
+                height: 30%;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+    
+}
+.bindings{
+    background-image: url(../img/binding_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 75%;
+    max-width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    &-products{
+        float: left;
+        display: grid;
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(2, 250px);
+        font-family: 'Montserrat';
+        &-1{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: lightgray;
+            text-align: center;
+            padding: 10px;
+            img{
+                width: 50%;
+                height: 50%;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        &-2{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+            img{
+                width: 50%;
+                height: 60%;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        &-3{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: white;
+            text-align: center;
+            padding: 10px;
+            img{
+                width: 50%;
+                height: 50%;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+        &-4{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: lightgray;
+            text-align: center;
+            padding: 10px;
+            img{
+                width: 50%;
+                height: 50%;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 920px){
+    .boards{
+        width: 500px;
+    }
+    .bindings{
+        width: 500px;
+    }
+}
+@media only screen and (max-width: 520px){
+    .boards{
+        width: 250px;
+        height: 1000px;
+        &-products{
+            grid-template-columns:repeat(1, 250px);
+            grid-template-rows:repeat(4, 250px);
+            &-4{
+                grid-area: 3/1/4/2;
+            }
+        }
+    }  
+    .bindings{
+        width: 250px;
+        height: 1000px;
+        &-products{
+            grid-template-columns:repeat(1, 250px);
+            grid-template-rows:repeat(4, 250px);
+            &-4{
+                grid-area: 3/1/4/2;
+            }
+        }
+    }   
+}

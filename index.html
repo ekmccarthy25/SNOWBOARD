@@ -4,6 +4,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
     <title>Home Page</title>
 </head>
 
@@ -15,11 +16,14 @@
         <ul class="nav-links">
             <li class="active"><a href="index.html">HOME</a></li>
             <li><a href="products.html">PRODUCTS</a></li>
-            <li><a href="team.html">TEAM</a></li>
+            <li><a href="sponsor.html">SPONSOR</a></li>
             <li><a href="about.html">ABOUT</a></li>
             <li><a href="blog.html">BLOG</a></li>
             <li><a href="contact.html">CONTACT</a></li>
         </ul>
+        <div class="nav-hamburger">
+            <img src="img/hamburger.png">
+        </div>
     </section>
     <section class="main">
     <div class="banner">
@@ -38,8 +42,6 @@
                 </div>
                 <div class="tall-content-body">
                     <p>Est fore litteris, do quis aute amet quibusdam ubi tamen qui laboris a ex est nulla officia, nam malis concursionibus, nulla expetendis arbitrantur, quamquam aliqua magna et aliqua, ipsum aut cernantur. In summis consequat a quo quem fugiat hic mentitum, nam ingeniis e offendit. Fore iudicem consectetur, elit vidisse ita possumus. Irure iis qui nisi mentitum, ita ipsum sunt noster quamquam. Se aliqua dolore an ullamco, quem proident aut ipsum velit.</p>
-                    <p>Pariatur quid senserit. Anim coniunctione nescius quis admodum ne aut esse senserit appellat, nulla eu vidisse ut minim, ipsum qui quibusdam. Ea sunt arbitrantur. Ingeniis voluptatibus sed laborum si sunt excepteur coniunctione de eu aliquip e incurreret non enim singulis non labore esse.
-                    </p>
                 </div>
             </div>
         </div>
@@ -94,6 +96,12 @@
             <p>Copyright &copy; 2018</p>
         </div>
     </section>
+    <script>
+        $(".nav-hamburger").click(function() {
+            $(".nav-links").slideToggle();
+        });
+
+    </script>
 </body>
 
 </html>
