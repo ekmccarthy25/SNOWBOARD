@@ -1,0 +1,224 @@
+/* Noah Kline */
+
+*{
+    font-family: 'Montserrat';
+}
+
+.blog{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-rows: 200px;
+    grid-gap: 10px;
+    margin: 10%;
+    justify-content: center;
+
+        &_textbox1{
+            grid-area: 1/1/3/3;
+            align-content: center;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-bottom: solid 10px #508AA8;
+            overflow-wrap: inherit;
+
+            &_head{
+                margin: 5% 7% 0 7%;
+                padding-bottom: 5%;
+                border-bottom: 1px solid #EBF2F1;
+
+                &_title{
+                    text-transform: uppercase;
+                    padding-bottom: 2%;
+                    font-weight: bold;
+                }
+
+                &_date{
+                    font-style: italic;
+                    font-weight: 200;
+                }
+            }
+
+            &_body{
+                display: flex;
+                justify-content: space-between;
+                margin: 0 7%;
+                font-weight: regular;
+                line-height: 5vh;
+            }
+
+            &_sm{
+                margin: 7%;
+                display: flex;
+                justify-content: space-around;
+
+                &_twitter{
+                    width: 33%;
+                    background-color: #76A9EA;
+                    color: white;
+                    padding: 2%;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                &_twitter:hover{
+                    background-color: white;
+                    color: #76a9ea;
+                    cursor: pointer;
+                }
+
+                &_facebook{
+                    width: 33%;
+                    background-color: #315283;
+                    color: white;
+                    padding: 2%;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                &_facebook:hover{
+                    background-color: white;
+                    color: #315283;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &_textbox2{
+            grid-area: 1/3/3/5 ;
+            align-content: center;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-bottom: solid 10px #508AA8;
+            overflow-wrap: inherit;
+           
+
+            &_head{
+                margin: 5% 7% 0 7%;
+                padding-bottom: 5%;
+                border-bottom: 1px solid #EBF2F1;
+
+                &_title{
+                    text-transform: uppercase;
+                    padding-bottom: 2%;
+                    font-weight: bold;
+                }
+
+                &_date{
+                    font-style: italic;
+                    font-weight: 200;
+                }
+            }
+
+            &_body{
+                display: flex;
+                justify-content: space-between;
+                margin: 0 7%;
+                font-weight: regular;
+                line-height: 5vh;
+            }
+
+            &_sm{
+                margin: 7%;
+                display: flex;
+                justify-content: space-around;
+
+                &_twitter{
+                    width: 33%;
+                    background-color: #76A9EA;
+                    color: white;
+                    padding: 2%;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                &_twitter:hover{
+                    background-color: white;
+                    color: #76a9ea;
+                    cursor: pointer;
+                }
+
+                &_facebook{
+                    width: 33%;
+                    background-color: #315283;
+                    color: white;
+                    padding: 2%;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                &_facebook:hover{
+                    background-color: white;
+                    color: #315283;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        
+        &_image1, &_image2, &_image3, &_image4, &_image5{
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            z-index: -2;
+        }
+
+        &_image1, &_image3, &_image5{
+            grid-area: 1/3/3/5;
+            width: 100%;
+            margin: -10%;
+        }
+
+        &_image2, &_image4{
+            grid-area: 1/1/3/3;
+            margin: -10% -10% -10% 0;
+        }
+
+        &_image1{
+            background-image: url(../img/blog-2.jpg);
+        }
+
+        &_image2{
+            background-image: url(../img/blog-1.jpg);
+        }
+
+        &_image3{
+            background-image: url(../img/blog-3.png);
+        }
+
+        &_image4{
+            background-image: url(../img/blog-4.png);
+        }
+
+        &_image5{
+            background-image: url(../img/blog-5.jpg);
+        }
+        
+}
+
+@media screen and (max-width: 920px) {
+    .blog{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-auto-rows: 100%;
+        grid-gap: 5px;
+
+        &_textbox1, &_textbox2{
+            grid-area: 1/1/3/5;
+
+            &_sm{
+                margin: 4%;
+                font-size: 80%;
+
+                &_twitter{
+                    width: 45%;
+                }
+                &_facebook{
+                    width: 45%;
+                }
+            }
+        }
+
+        &_image1, &_image2, &_image3, &_image4, &_image5{
+            grid-area: 3/1/5/5;
+            margin: -5% 0 5%;
+        }
+    }
+
+}
+

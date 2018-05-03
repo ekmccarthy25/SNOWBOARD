@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <!-- NOAH KLINE -->
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <script src="js/jquery.min.js"></script>
+    <title>Contact</title>
+</head>
+
+<body>
+    <section class="nav">
+        <div class="nav-logo">
+            <img class="nav-logo" src="img/logo.png">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="sponsor.html">SPONSOR</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li class="active"><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="nav-hamburger">
+            <img src="img/hamburger.png">
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="contact_head">
+            <h1 class="contact_head_text">Send us a Message</h1>
+        </div>
+            <form action="#" method="post" class="contact_form">
+                    <div class="name">
+                      <label for="name"></label>
+                      <input type="text" placeholder="Name" name="name" id="name_input" required>
+                    </div>
+                    <div class="email">
+                      <label for="email"></label>
+                      <input type="email" placeholder="Email" name="email" id="email_input" required>
+                    </div>
+                    <div class="telephone">
+                      <label for="name"></label>
+                      <input type="text" placeholder="Phone number" name="telephone" id="telephone_input" required>
+                    </div>
+                    <div class="subject">
+                      <label for="subject"></label>
+                      <input type="text" placeholder="Subject" name="subject" id="subject_input" required>
+                    </div>
+                    <div class="message">
+                      <label for="message"></label>
+                      <textarea name="message" placeholder="Message" id="message_input" cols="30" rows="5" required></textarea>
+                    </div>
+                    <div class="submit">
+                      <input type="submit" value="Submit" id="form_button" />
+                    </div>
+                  </form><!-- // End form -->
+                </div><!-- // End container -->
+    </section>
+
+    <section class="customerservice">
+        <div class="customerservice_content">
+            <h3 class="customerservice_content_header">Find Us <i class="fas fa-eye"></i></h3>
+            
+
+            <div class="customerservice_content_left">
+                <p class="customerservice_content_left_text"><b>ADDRESS (US)</b><br><br>
+
+                        Arbor Collective<br>
+                        102 Washington Blvd.<br>
+                        Venice, CA 90292<br>
+                        Tel: 310.577.1120<br>
+                        Fax: 310.577.1121<br>
+                        snow_info@arborcollective.com</p>
+            </div>
+
+            <div class="customerservice_content_center">
+                <p class="customerservice_content_center_text"><b>ADDRESS (AUS)</b><br><br>
+
+                    Floodlight Dist<br>
+                    Unit 6/22 Reliance Dr.<br>
+                    Tuggerah, NSW Australia 2259<br>
+                    Tel: 61.2.4351.6333<br>
+                    Tel: 61.2.4351.6333<br>
+                    info@floodlightdist.com.au</p>
+            </div>
+
+            <div class="customerservice_content_right">
+                <p class="customerservice_content_right_text"><b>ADDRESS (UK)</b><br><br>
+
+                    Ultra Sport Europe Ltd.<br>
+                    Carnival Way, Castle Donington<br>
+                    Derbyshire, UK, DE74 2HP<br>
+                    Tel: 44(0)1332.813.150<br>
+                    Tel: 44(0)1332.813.150<br>
+                    info@ultrasporteu.com</p>
+            </div>
+        </div>
+    </section>
+
+
+
+   
+    <section class="footer">
+        <div class="footer-top">
+            <div class="footer-top-third">
+                <img class="icon" src="img/icon_truck.png">
+                <h3>FREE SHIPPING</h3>
+                <p>Qui sunt iudicem, nostrud lorem pariatur, eu ingeniis imitarentur et ex varias praetermissum ad quo probant reprehenderit.</p>
+            </div>
+            <div class="footer-top-third">
+                <img class="icon" src="img/icon_check.png">
+                <h3>SATISFACTION GARUNTEED</h3>
+                <p>Qui sunt iudicem, nostrud lorem pariatur, eu ingeniis..</p>
+            </div>
+            <div class="footer-top-third">
+                <img class="icon" src="img/icon_mark.png">
+                <h3>CONTACT</h3>
+                <p>Qui sunt iudicem, nostrud lorem pariatur, eu ingeniis imitarentur et ex varias praetermissum ad quo pro.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2018</p>
+        </div>
+    </section>
+    <script>
+        $(".nav-hamburger").click(function() {
+            $(".nav-links").slideToggle();
+        });
+
+    </script>
+</body>
+
+</html>
+
