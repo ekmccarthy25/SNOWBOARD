@@ -1,7 +1,6 @@
 {
   "name": "snowboard",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w"
@@ -11,5 +10,14 @@
   "dependencies": {
     "jquery": "^3.3.1",
     "node-sass": "^4.8.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ekmccarthy25/SNOWBOARD.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ekmccarthy25/SNOWBOARD/issues"
+  },
+  "homepage": "https://github.com/ekmccarthy25/SNOWBOARD#readme",
+  "description": ""
 }
