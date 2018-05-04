@@ -2,13 +2,14 @@
 margin: 1rem auto;
 max-width: 1200px;
 background-color: white;
+// border: 1px solid blue;
 
   &-title {
     text-transform: uppercase;
     font-size: 1rem;
     color: #444;
     font-weight: 400;
-    text-shadow: .5px .5px #000;
+    // text-shadow: .5px .5px #000;
     text-align: center;
   }
 
@@ -20,8 +21,92 @@ background-color: white;
     font-size: 2rem;
     padding: 2rem;
   }
+} 
+
+.line-break {
+  margin: 4rem auto;
+  display: flex;
+  width: 90%;
+  
 }
 
+.grip {
+  position: relative;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  flex-direction: row;
+  align-items: center;
+
+    &-left {
+      background-image: url("../../img/about/grip-left-hor.jpg");
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center; 
+    }
+    &-right {
+      background-image: url("../../img/about/grip-right-hor.jpg");
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center; 
+      // height: 100%;
+    }
+
+    &-text {
+      padding: 2rem;
+      align-content: center;
+      align-items: center;
+    }
+    &-part {
+      height: 12rem;
+      width: 100%;
+      margin: 0 auto;
+      // border: 1px solid black;
+    }
+  
+
+  // border: 1px solid black;
+  img {
+    margin: 0 auto;
+    border: 1px solid red;
+    display: flex;
+  }
+  &-part {
+    // border: 1px solid blue;
+    display: flex;
+    
+    
+  }
+  &-text {
+  text-align: justify;
+  line-height: 2rem;
+  }
+}
+
+.systems {
+  position: relative;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  flex-direction: row;
+  
+
+  &-type {
+    position: relative;
+    margin: 1rem;
+    flex-grow: .5;
+
+    img {
+    display: block;
+    width: 100%;
+    }
+  }
+
+}
 
 .divider {
   // width: 70%;
@@ -69,6 +154,7 @@ background-color: white;
   flex-wrap: wrap;
   max-width: 1000px;
   flex-direction: row;
+  padding-bottom: 100px;
   
   &-type {
     position: relative;
@@ -83,6 +169,9 @@ background-color: white;
 
 }
 
+
+
+
 //MEDIA QUERY 600PX
 @media screen and (min-width: 600px) {
   .noses {
@@ -92,24 +181,60 @@ background-color: white;
       width: calc(50% - 5rem);
     }
   }
+  
 }
 
 // MEDIA QUERY 800PX
 @media screen and (min-width: 800px) {
-  .noses {
-    // margin: 2.5rem;
+  .systems, .noses, .reinforcement, .grip {
     margin: 0 auto;
+  }
+  .noses {
   &-type {
       width: calc(25% - 2rem);
       margin: 2rem .5rem;
   }
 }
   .reinforcement {
-    margin: 0 auto;
     &-type {
       width: calc(50% - 5rem);
       // margin: 2rem;
       // flex-grow: .25;
     }
+  }
+  .systems {
+    &-type {
+      width: calc(50% - 5rem);
+    }
+  }
+  .grip {
+    &-left {
+      background-image: url("../../img/about/grip-left-vert.jpg");
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center; 
+    }
+    &-right {
+      background-image: url("../../img/about/grip-right-vert.jpg");
+      background-repeat: no-repeat;
+      // background-attachment: fixed;
+      background-position: center; 
+      // height: 100%;
+    }
+    &-part{
+    width: calc((100% / 3 ) - 1.5rem);
+    // border: 1px solid black;
+    height: 500px;
+    display: flex;
+    // align-content: center;
+    // justify-content: center;
+
+    }
+  &-text {
+    // justify-content: center;
+    // align-content: center;
+    align-items: center;
+  }
+
   }
 }
