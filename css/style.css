@@ -859,14 +859,20 @@ textarea {
   margin: 1rem auto;
   max-width: 1200px;
   background-color: white; }
-
-.section-heading {
-  text-align: center;
-  font-family: Montserrat;
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 2rem;
-  padding: 2rem; }
+  .tech-title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #444;
+    font-weight: 400;
+    text-shadow: .5px .5px #000;
+    text-align: center; }
+  .tech-section-heading {
+    text-align: center;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2rem;
+    padding: 2rem; }
 
 .divider {
   position: relative;
@@ -891,16 +897,11 @@ textarea {
     position: relative;
     width: calc(50% - 3rem);
     margin: 1rem; }
-    .noses-type-title {
-      text-transform: uppercase;
-      font-size: .75rem;
+    .noses-type h4 {
       position: absolute;
       top: 88%;
       left: 50%;
-      transform: translate(-50%, -50%);
-      color: #444;
-      font-weight: 400;
-      text-shadow: .5px .5px #000; }
+      transform: translate(-50%, -50%); }
 
 .reinforcement {
   position: relative;
